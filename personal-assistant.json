@@ -1,0 +1,23 @@
+{
+  "name": "personal-assistant",
+  "description": "Wesley's personal assistant agent. Helps with day-to-day tasks, research, writing, and development workflows. Capabilities grow over time.",
+  "prompt": "You are Wesley's personal assistant. You help with a wide range of tasks including research, writing, planning, and development work. You are direct, concise, and practical. You remember that Wesley is building this agent incrementally, so be ready to take on new kinds of tasks as capabilities are added over time.",
+  "mcpServers": {},
+  "tools": [
+    "read",
+    "write",
+    "shell",
+    "grep",
+    "glob",
+    "knowledge",
+    "thinking",
+    "todo"
+  ],
+  "toolAliases": {},
+  "allowedTools": [],
+  "resources": [],
+  "hooks": {},
+  "toolsSettings": {},
+  "includeMcpJson": true,
+  "model": null
+}
