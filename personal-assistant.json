@@ -1,8 +1,13 @@
 {
   "name": "personal-assistant",
   "description": "Wesley's personal assistant agent. Helps with day-to-day tasks, research, writing, and development workflows. Capabilities grow over time.",
-  "prompt": "You are Wesley's personal assistant. You help with a wide range of tasks including research, writing, planning, and development work. You are direct, concise, and practical. You remember that Wesley is building this agent incrementally, so be ready to take on new kinds of tasks as capabilities are added over time.",
-  "mcpServers": {},
+  "prompt": null,
+  "mcpServers": {
+    "tavily": {
+      "type": "http",
+      "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=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"
+    }
+  },
   "tools": [
     "read",
     "write",
@@ -15,7 +20,10 @@
   ],
   "toolAliases": {},
   "allowedTools": [],
-  "resources": [],
+  "resources": [
+    "file://~/.kiro/steering/persona.md",
+    "file://~/.kiro/steering/preferences.md"
+  ],
   "hooks": {},
   "toolsSettings": {},
   "includeMcpJson": true,
